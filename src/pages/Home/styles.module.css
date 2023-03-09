@@ -1,0 +1,17 @@
+.movieCard {
+  max-width: 100%;
+  width: 300px;
+  height: 400px;
+  border-radius: 10px;
+
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  cursor: pointer;
+  transition: .5s ease;
+}
+
+.movieCard:hover {
+  transform: scale(1.1);
+}
