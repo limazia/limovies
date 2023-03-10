@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+img,
+svg {
+  display: block;
+  width: 100%;
+  -webkit-user-drag: none;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+  background: #9466ff;
+}
+
+@import "partials/cards";
+@import "partials/details";
+@import "partials/loading";
