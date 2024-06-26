@@ -1,15 +1,11 @@
 import axios from 'axios';
 
-//const API_KEY = '';
-const TOKEN = '';
-
 const api = axios.create({
-  baseURL: 'https://api.themoviedb.org/3/',
-  withCredentials: false,
+  baseURL: import.meta.env.VITE_API_URL,
   headers: {
     Accept: 'application/json',
     'Content-Type': 'application/json',
-    'Authorization': `Bearer ${TOKEN}`
+    'Authorization': `Bearer ${import.meta.env.VITE_API_TOKEN}`
   }
 });
 
